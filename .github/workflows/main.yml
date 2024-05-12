@@ -9,4 +9,7 @@ jobs:
     name: Simple Job
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello from ${{ github.actor }}"
+      - run: echo "Hello from ${{ github.actor }}. Checking out..."
+      - name: Checkout
+        uses: actions/checkout@v4.1.5
+      - run: tree
