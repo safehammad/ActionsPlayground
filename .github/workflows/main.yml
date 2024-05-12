@@ -12,8 +12,8 @@ jobs:
     steps:
       - run: |
           echo "Hello from ${{ github.actor }}. Checking out..."
-          echo "My variable is ${{ github.MY_VARIABLE }}."
-          echo "My secret is ${{ github.MY_SECRET }}."
+          echo "My variable is ${{ vars.MY_VARIABLE }}."
+          echo "My secret is ${{ secrets.MY_SECRET }}."
       - name: Checkout
         uses: actions/checkout@v4.1.5
       - run: tree
