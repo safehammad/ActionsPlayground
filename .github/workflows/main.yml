@@ -1,0 +1,12 @@
+# A simple workflow
+name: A Simple Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  simple-job:
+    name: Simple Job
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello from ${{ github.actor }}
