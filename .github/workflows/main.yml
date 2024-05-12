@@ -9,4 +9,4 @@ jobs:
     name: Simple Job
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello from ${{ github.actor }}
+      - run: echo "Hello from ${{ github.actor }}"
